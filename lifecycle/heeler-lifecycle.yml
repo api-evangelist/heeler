@@ -1,0 +1,17 @@
+generated: '2026-07-19'
+method: searched
+source: https://status.heeler.com ; https://github.com/heeler-security/heelercli/releases
+status_page: https://status.heeler.com
+status_page_vendor: statusPage (hosted status page, "All systems operational")
+versioning:
+  scheme: semver
+  component: heelercli
+  current: 1.0.15
+  docs: https://github.com/heeler-security/heelercli/releases
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No public deprecation/sunset policy located; --sbom_file CLI flag noted as deprecated in favor of --sbom.
+sla:
+  url: null
+deprecated_operations: []

@@ -1,0 +1,34 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/heeler-security/heelercli/tree/main/.agents/skills
+note: >-
+  First-party Agent Skills published by Heeler Security in the heelercli
+  repository under .agents/skills/. Saved verbatim. Installable into other
+  repositories via @sentry/dotagents. These are product skills that drive the
+  heelercli command surface (see cli/heeler-cli.yml) against the authenticated
+  Heeler platform (app.heeler.com, Bearer API key).
+skills:
+- file: heeler-scan-all.md
+  name: heeler-scan-all
+  description: Run a complete security scan workflow (secrets, vulnerabilities, licenses).
+- file: heeler-secrets-scan.md
+  name: heeler-secrets-scan
+  description: Run Heeler secret scanning for a repository or staged changes.
+- file: heeler-vulnerabilities-scan.md
+  name: heeler-vulnerabilities-scan
+  description: Run dependency vulnerability scanning and policy gating (CVE, severity, SBOM).
+- file: heeler-license-check.md
+  name: heeler-license-check
+  description: Perform dependency license checks and OSS license compliance inventory.
+- file: heeler-malicious-package-scan.md
+  name: heeler-malicious-package-scan
+  description: Detect suspicious/malicious dependencies using Heeler package-risk intelligence.
+- file: heeler-recommended-version.md
+  name: heeler-recommended-version
+  description: Determine the recommended dependency version for a package ecosystem.
+- file: heeler-security-review.md
+  name: heeler-security-review
+  description: Repository security review with prioritized remediation plan.
+- file: heeler-threat-modeling.md
+  name: heeler-threat-modeling
+  description: Resolve a service id, gather context, and build a threat-modeling prompt.

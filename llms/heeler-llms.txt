@@ -1,0 +1,24 @@
+# Heeler
+
+> Heeler is the Agentic Development Security Platform — machine-speed security for AI-written code. It prevents vulnerabilities during AI code generation, autonomously fixes dependency and code issues with CI-validated merge-ready pull requests, and continuously audits open source (SCA), code security (SAST), secrets, and agent-skill threats across the AI SDLC. Heeler embeds security policy into coding agents (Claude Code, Cursor, GitHub Copilot) through MCP servers and agent skills, deploys without build modification, and is SOC 2 Type II certified. Backed by Norwest Venture Partners.
+
+## Product
+- [Heeler platform](https://heeler.com): Prevent, Fix, and Audit across the AI SDLC
+- [Pricing](https://heeler.com/pricing): per-contributing-developer model (SCA, SAST, secrets, agent-skills security, auto-fix, MCP & agent-skills support, SSO SAML/SCIM)
+- [Get a demo](https://heeler.com/get-a-demo)
+- [Sign in](https://app.heeler.com/)
+
+## Developer artifacts
+- [heelercli (GitHub)](https://github.com/heeler-security/heelercli): first-party CLI + pre-commit hooks for secrets, SAST, dependency vulnerability/license/SBOM (release 1.0.15)
+- [GitHub organization](https://github.com/heeler-security): CLI + Terraform deployment modules (AWS single-account, AWS broker ECS, GCP Workload Identity Federation)
+- [Agent Skills](https://github.com/heeler-security/heelercli/tree/main/.agents/skills): 8 published skills — scan-all, secrets-scan, vulnerabilities-scan, license-check, malicious-package-scan, recommended-version, security-review, threat-modeling (installable via @sentry/dotagents)
+
+## Trust & security
+- [Trust Center](https://trust.heeler.com/): SOC 2 Type II (Vanta)
+- [Status](https://status.heeler.com)
+
+## Resources
+- [Resource center / Blog](https://heeler.com/resource-center)
+- [FAQ](https://heeler.com/faq)
+- [Terms and Conditions](https://heeler.com/terms-and-conditions)
+- [Privacy Policy](https://heeler.com/privacy-policy)

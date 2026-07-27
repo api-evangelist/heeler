@@ -1,0 +1,60 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/heeler-security/heelercli
+name: heelercli
+summary: >-
+  Heeler Security CLI. Hosts release artifacts and pre-commit hooks for local
+  and CI security checks: secret scanning, source-code static analysis (SAST),
+  and dependency vulnerability / license / SBOM workflows. Authenticates to the
+  Heeler platform with a Bearer API key; SAST engine is downloaded on demand for
+  a logged-in user (checksum- and signature-verified, then cached).
+repository: https://github.com/heeler-security/heelercli
+latest_release: '1.0.15'
+platforms:
+- {os: linux, arch: [amd64, arm64], archive: .tgz}
+- {os: macos, arch: [arm64], archive: .tgz}
+- {os: windows, arch: [amd64], archive: .zip}
+install:
+- method: pre-commit (auto-install)
+  detail: >-
+    Add repo https://github.com/Heeler-Security/heelercli with hook id
+    "heelercli-auto" to .pre-commit-config.yaml; downloads the correct binary on
+    first run and caches it.
+- method: pre-commit (system)
+  detail: Hook id "heelercli" runs `heelercli secrets --pre-commit` against a locally installed binary.
+auth:
+  scheme: Bearer API key
+  login: heelercli login https://app.heeler.com <HEELER_API_KEY>
+  env: HEELER_API_KEY
+  config_path: ~/.config/heeler/config.json (Linux/macOS), %AppData%\heeler\config.json (Windows)
+commands:
+- name: login
+  summary: Save the Heeler base URL and validate/save an API key.
+- name: secrets
+  summary: Scan staged diffs or the full repo for exposed secrets/credentials; validated where possible.
+  flags: [--exclude, --fail-on, --only-validated, --pre-commit]
+- name: vulnerabilities
+  summary: Auto-discover dependency manifests, generate SBOMs, submit to Heeler, and evaluate policy failures.
+  flags: [--fail-on-any, --fail-on-severity, --fail-on-id, --exclude-dir, --baseline, --new-findings-only, --format, --output]
+- name: assess-sbom
+  summary: Assess an existing CycloneDX JSON SBOM file.
+  flags: [--sbom, --format, --output]
+- name: licenses
+  summary: Scan discovered dependencies for license risk and policy violations; `licenses valid` prints the allowed SPDX set.
+  flags: [--format, --llm-output, -q]
+- name: download-sbom
+  summary: Download a platform SBOM by service_id or application_id.
+  flags: [--service_id, --application_id]
+- name: sast
+  summary: Run Heeler static analysis over the current repository (injection, taint data-flows, insecure config); engine fetched on demand.
+  flags: [--fail-on, --repo-profile, --exclude, --exclude-dir, --timeout, --format, --output]
+ecosystems_supported:
+- C#/.NET (NuGet)
+- Go
+- Java (Maven)
+- JavaScript/TypeScript (npm + pnpm)
+- PHP (Composer)
+- Python (uv, Poetry, Pipenv, requirements)
+- Ruby (RubyGems/Bundler)
+- Rust (Cargo)
+output_formats: [detailed, table, json, sarif]

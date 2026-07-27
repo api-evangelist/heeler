@@ -1,0 +1,16 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://www.heeler.com/trust
+url: https://www.heeler.com/trust
+trust_center: https://trust.heeler.com/
+certifications:
+- SOC 2 Type II
+evidence:
+- source: https://www.heeler.com/trust
+  keywords:
+  - soc 2
+  - trust center
+- source: https://heeler.com
+  keywords:
+  - soc 2 type ii certified

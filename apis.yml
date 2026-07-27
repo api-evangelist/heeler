@@ -1,21 +1,50 @@
 aid: heeler
 name: Heeler
-description: 'Heeler is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Heeler is the Agentic Development Security Platform — machine-speed security for AI-written
+  code. As coding agents (Claude Code, Cursor, GitHub Copilot) and AI attackers reshape the software
+  development lifecycle, Heeler prevents vulnerabilities during code generation, autonomously fixes
+  dependency and code issues with CI-validated merge-ready pull requests, and continuously audits open
+  source (SCA), code security (SAST), secrets, and agent-skill threats across the AI SDLC. It embeds
+  security policy into coding agents through MCP servers and agent skills, deploys without build
+  modification ("live in a day"), and is SOC 2 Type II certified. Heeler is backed by Norwest Venture
+  Partners.'
 url: https://raw.githubusercontent.com/api-evangelist/heeler/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - norwest-venture-partners
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: portfolio-lead-enriched
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/66cf69c0cc1c2187f845d6c7/6a3c61fb045913ca45e87790_og_B2_revised.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Unknown
+- Security
+- Application Security
+- DevSecOps
+- AI
+- Agents
+- MCP
+- Agent Skills
+- Code Security
+- Vulnerability Management
+- SAST
+- SCA
+- Secrets Detection
+- AI SDLC
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +52,46 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/heeler-trust-center.yml
+- type: DomainSecurity
+  url: security/heeler-domain-security.yml
 - type: Website
   url: https://heeler.com
+- type: Pricing
+  url: https://heeler.com/pricing
+- type: SignUp
+  url: https://heeler.com/get-a-demo
+- type: Login
+  url: https://app.heeler.com/
+- type: Blog
+  url: https://heeler.com/resource-center
+- type: Support
+  url: https://heeler.com/faq
+- type: TermsOfService
+  url: https://heeler.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://heeler.com/privacy-policy
+- type: Compliance
+  url: https://trust.heeler.com/
+- type: GitHubOrganization
+  url: https://github.com/heeler-security
+- type: StatusPage
+  url: https://status.heeler.com
+- type: CLI
+  url: cli/heeler-cli.yml
+- type: Packages
+  url: packages/heeler-packages.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: Conformance
+  url: conformance/heeler-conformance.yml
+- type: Lifecycle
+  url: lifecycle/heeler-lifecycle.yml
+- type: LLMsTxt
+  url: llms/heeler-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

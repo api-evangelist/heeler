@@ -1,0 +1,37 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/heeler-security
+note: >-
+  Heeler distributes first-party artifacts through its GitHub organization
+  (heeler-security) as release binaries and Terraform deployment modules rather
+  than public language-registry SDK packages. Public npm/PyPI matches for
+  "heeler" are unrelated third parties and are excluded.
+packages:
+- language: go
+  registry: github-releases
+  name: heelercli
+  url: https://github.com/heeler-security/heelercli
+  install: 'pre-commit hook id heelercli-auto (auto-downloads binary); or install heelercli binary directly'
+  official: true
+  kind: cli
+- language: hcl
+  registry: github
+  name: terraform-aws-heeler-single-account
+  url: https://github.com/heeler-security/terraform-aws-heeler-single-account
+  install: 'module source = "github.com/heeler-security/terraform-aws-heeler-single-account"'
+  official: true
+  kind: terraform-module
+- language: hcl
+  registry: github
+  name: terraform-aws-heeler-broker-ecs
+  url: https://github.com/heeler-security/terraform-aws-heeler-broker-ecs
+  install: 'module source = "github.com/heeler-security/terraform-aws-heeler-broker-ecs"'
+  official: true
+  kind: terraform-module
+- language: hcl
+  registry: github
+  name: terraform-google-heeler-wif
+  url: https://github.com/heeler-security/terraform-google-heeler-wif
+  install: 'module source = "github.com/heeler-security/terraform-google-heeler-wif"'
+  official: true
+  kind: terraform-module

@@ -1,0 +1,32 @@
+# Front Door AI Index — heeler — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: heeler
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: heeler.com
+  final_host: www.heeler.com
+  ownership: own
+  owner: heeler
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 41
+  host_score: 41
+  density: 31.11
+  words: 1318
+  tiers:
+    agentic: 11
+    core: 25
+    model: 5
+  ambiguous: 17
+  top_terms:
+    AI: 25
+    agent: 16
+    MCP: 6
+    Claude: 5
+    agentic: 3
+    automation: 1
+    copilot: 1
+    prompts: 1

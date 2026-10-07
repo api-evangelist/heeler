@@ -1,0 +1,60 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.heeler.com/pricing
+sources:
+- https://www.heeler.com/pricing
+- https://heeler.com/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: per-seat
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Per-contributing-developer tiered rate; sold as annual subscription with quarterly true-ups. Example
+  calculator shows "Per year $126,000" at $21/dev/mo.
+plan_count: 6
+currency: USD
+plans:
+- name: 1–199 devs
+  price_text: $35
+  price: 35
+  currency: USD
+  period: month
+  unit: per developer
+  included_quota: All features included in every subscription
+- name: 200–299
+  price_text: $30
+  price: 30
+  currency: USD
+  period: month
+  unit: per developer
+- name: 300–499
+  price_text: $25
+  price: 25
+  currency: USD
+  period: month
+  unit: per developer
+- name: 500–999
+  price_text: $21
+  price: 21
+  currency: USD
+  period: month
+  unit: per developer
+- name: 1,000–1,499
+  price_text: $19
+  price: 19
+  currency: USD
+  period: month
+  unit: per developer
+- name: 1,500+
+  price_text: $17
+  price: 17
+  currency: USD
+  period: month
+  unit: per developer
